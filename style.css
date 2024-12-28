@@ -1,0 +1,104 @@
+
+#dark-mode{
+    background-color: rgb(44, 34, 8);
+    border-color: rgb(44, 34, 8);
+    -webkit-text-fill-color: whitesmoke;
+}
+
+.container {
+    text-align: center; /* center the text at the bottom*/
+}
+
+i.fa-solid{
+    position: absolute;
+    left: 66%;
+    top: 57px;
+    cursor: pointer;
+    color: gray;
+display: none;
+}
+.img{
+    transition: 0.4s;
+}
+
+/* change the cursor when hover over logo */
+#logo {
+    cursor: pointer;  
+}
+
+ /* makes image bigger if you hover over it */
+.img:hover{
+    transform: scale(1.05,1.05);
+    box-shadow: 0 0 5px 1px gray;
+}
+
+ /* makes "Watch Full Video On Youtube" text glow */
+.yt:hover{
+    text-shadow:  0 0 4px red;
+    cursor: pointer;
+}s
+
+ /* changes  "Website made by: Suvam Maharjan" color */
+.credit{
+    color: rgb(255, 184, 5);
+
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+ /* waving animation when you search food */
+.wave{
+    width: 5px;
+    height: 100px;
+    background: linear-gradient(45deg, rgb(255, 255, 189), rgb(4, 4, 7));
+    margin: 10px;
+    animation: wave 1s linear infinite;
+    border-radius: 20px;
+    display: none;
+}
+.wave:nth-child(2){
+    animation-delay: 0.15s;
+}
+.wave:nth-child(3){
+    animation-delay: 0.2s;
+}
+.wave:nth-child(4){
+    animation-delay: 0.3s;
+}
+.wave:nth-child(5){
+    animation-delay: 0.4s;
+}
+.wave:nth-child(6){
+    animation-delay: 0.5s;
+}
+.wave:nth-child(7){
+    animation-delay: 0.6s;
+}
+.wave:nth-child(8){
+    animation-delay: 0.7s;
+}
+.wave:nth-child(9){
+    animation-delay: 0.8s;
+}
+.wave:nth-child(10){
+    animation-delay: 0.9s;
+}
+
+@keyframes wave {
+    0%{
+        transform: scale(0);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0);
+    }
+}
